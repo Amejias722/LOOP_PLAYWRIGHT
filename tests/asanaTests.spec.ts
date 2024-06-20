@@ -26,3 +26,12 @@ test.describe('Asana Data-Driven Tests', () => {
         });
     });
 });
+
+
+//  // Wait for the Todo column to be visible
+//  const todoColumnLocator = page.locator('div[data-column="Todo"]'); // Adjust this selector based on the actual column selector
+//  await expect(todoColumnLocator).toBeVisible();
+
+//  // Check if the project is in the Todo column
+//  const projectLocator = todoColumnLocator.locator(`text=${projectName}`);
+//  return await projectLocator.isVisible();
