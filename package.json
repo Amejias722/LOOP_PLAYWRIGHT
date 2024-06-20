@@ -1,0 +1,26 @@
+{
+  "name": "loop_playwright",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.44.1",
+    "@types/node": "^20.14.6"
+  },
+  "dependencies": {
+    "@applitools/eyes-playwright": "^1.28.1",
+    "@applitools/req": "^1.7.1",
+    "jest": "^29.7.0",
+    "puppeteer": "^22.11.2"
+  },
+  "jest": {
+    "preset": "jest-playwright-preset",
+    "testMatch": ["**/*.test.js"],
+    "verbose": true,
+    "testTimeout": 60000
+  }
+}
