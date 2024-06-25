@@ -2,7 +2,10 @@
   "name": "loop_playwright",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test:ui": "playwright test --ui",
+    "test": "playwright test"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
