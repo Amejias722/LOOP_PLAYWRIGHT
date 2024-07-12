@@ -1,4 +1,4 @@
-## Test is read-only for now. please do not run due to change in login credentials.
+## Test is read-only for now. Please do not run due to change in login credentials.
 
 Playwright project using data-driven testing.
 
