@@ -1,3 +1,5 @@
+## Test is ready-only for now. please do not run due to change in login credentials.
+
 Playwright project using data-driven testing.
 
 Acceptance Criteria:
