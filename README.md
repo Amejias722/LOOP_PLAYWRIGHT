@@ -1,6 +1,6 @@
 # Playwright Project 🎭
 ## _Data-Driven Testing With Asana._
-Note: Test is **read-only** due to update in login credentials. Do not run test.
+Note: Test is **read-only** due to change in login credentials. Do not run test.
 
 ## Overview 👩🏻‍💻
 
