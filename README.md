@@ -1,30 +1,33 @@
-## Test is read-only for now. Please do not run due to change in login credentials.
+# Playwright Project 🎭
+## _Data-Driven Testing With Asana._
+Note: Test is **read-only** due to update in login credentials. Do not run test.
 
-Playwright project using data-driven testing.
+## Overview 👩🏻‍💻
 
-Acceptance Criteria:
-•	Setup and Preparation:
-•	Create a new project or workspace specifically for this task.
-•	Ensure Playwright and the necessary dependencies are installed and set up.
+This test suite is designed to perform data-driven testing for Asana projects. Each test case within the suite leverages different sets of data to validate various aspects of the Asana project functionality.
 
+## Challenge and Test Description 📝 ✨
+Data-Driven Testing Using JSON:
 
-•	Login Automation:
-•	Automate the login process to Asana using the provided credentials.
-•	https://app.asana.com/-/login
-•	Email: ben+pose@workwithloop.com
-•	Password: Password123
-•	The script should be capable of inputting the email address and password and submit the form successfully.
+Tests should be driven from the testCases JSON object. Implement a mechanism to read test case data from this JSON object to drive your tests. Each test case will comprise of 3 test.steps:
 
+ - Login to Asana: Verify that a user can log in to Asana successfully using provided credentials.
+ - Navigate to Project Page: Ensure that the user can navigate to a specified project page and validate the visibility of a specific project card.
+ - Verify Card Position: Check that the specified project card is visible and correctly positioned within the right column of the project page.
 
-•	Data-Driven Testing Using JSON:
-•	Your tests should be driven from the testCases JSON object.
-•	Implement a mechanism to read test case data from this JSON object to drive your tests.
-•	Each test case will comprise of 3 test.step:
-•	Navigation: Navigate to the correct leftNav item as mentioned in the JSON object.
-•	Column Verification: Confirm that the specified card_title is present in the designated column.
+ ## Installation ⚙️
 
+This project requires [Playwright](https://playwright.dev/docs/intro) to run.
 
-Expected Implementation Techniques:
-1. Dynamic Locators: The test dynamically generates locators based on the current test case's data, such as data.leftNav, data.column, and data.card_title. This demonstrates Playwright's flexibility in creating locators at runtime.
-2. Nested Locators: The test showcases the use of nested locators when it seeks to find the tags associated with a specific card. By chaining the .locator() method, you can refine your search based on a parent locator, effectively narrowing down the elements you're targeting.
+Install dependencies
+```sh
+yarn install
+```
 
+Running the test
+
+```sh
+yarn playwright test
+or
+yarn test:ui
+```
