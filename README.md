@@ -17,8 +17,6 @@ Tests should be driven from the testCases JSON object. Implement a mechanism to 
 
  ## Installation ⚙️
 
-This project requires [Playwright](https://playwright.dev/docs/intro) to run.
-
 Install dependencies
 ```sh
 yarn install
